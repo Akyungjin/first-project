@@ -1,0 +1,19 @@
+package com.kh.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/api/*")
+public class APIController {
+		@GetMapping("get")
+		public void replace() {}
+		
+		@PostMapping("get")
+		public String getData(String sidoName)throws Exception {
+			//공공데이터포탈과 통신
+			String url = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty";
+		}
+}

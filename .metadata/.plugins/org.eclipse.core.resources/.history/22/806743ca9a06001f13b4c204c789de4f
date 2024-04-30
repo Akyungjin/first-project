@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GET</title>
+	</head>	
+	<body>
+		<h2>공공데이터</h2>
+		<select id="sidoName">
+			<opation>전국</opation>
+			<opation>서울</opation>
+			<opation>부산</opation>
+			<opation>대구</opation>
+			<opation>인천</opation>
+			<opation>광주</opation>
+			<opation>대전</opation>
+			<opation>울산</opation>
+			<opation>경기</opation>
+			<opation>강원</opation>
+			<opation>충북</opation>
+			<opation>충남</opation>
+			<opation>전북</opation>
+			<opation>전남</opation>
+			<opation>경북</opation>
+			<opation>경남</opation>
+			<opation>제주</opation>
+			<opation>세종</opation>
+		</select>
+		<input type="button" value="확인하기" onclick="doing()">
+		<table id="resultTbl" border="1">
+			<thead>
+				<tr>
+					<td>지역</td>
+					<td>측정소</td>
+					<td>일시</td>
+					<td>통합대기환경수치</td>
+					<td>미세먼지농도</td>
+					<td>일산화탄소농도</td>
+					<td>이산화탄소농도</td>
+					<td>아황산가스농도</td>
+					<td>오존가스농도</td>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>		
+	</body>
+<script src="	https://code.jquery.com/jquery-3.7.1.min.js"></script>	
+<script>
+	const resultTbl = document.getElementById("resultTbl");
+	
+	function doing(){
+		$.ajax({
+			url:""
+		})
+	}
+	
+</script>	
+</html>
